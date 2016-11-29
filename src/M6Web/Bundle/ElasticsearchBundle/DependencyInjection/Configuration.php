@@ -38,6 +38,7 @@ class Configuration implements ConfigurationInterface
                         ->scalarNode('clientBuilderClass')->defaultValue('Elasticsearch\ClientBuilder')->end()
                         ->scalarNode('connectionPoolClass')->end()
                         ->scalarNode('selectorClass')->end()
+                        ->scalarNode('connectionParams')->defaultValue([])->end()
                         ->integerNode('retries')->end()
                         ->scalarNode('logger')->end()
                         ->variableNode('headers')->end()
